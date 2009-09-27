@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Run Program">
+			<action name="Execute">
+				<execute>
+					gmrun
+				</execute>
+			</action>
+		</item>
+		<menu id="Debian"/>
+		<item label="Alltray">
+			<action name="Execute">
+				<execute>
+					alltray -a
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="PCManFM">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<item label="Thunar">
+			<action name="Execute">
+				<execute>
+					thunar
+				</execute>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<execute>
+					terminator --geometry 900x700+20+30
+				</execute>
+			</action>
+		</item>
+		<item label="Gedit">
+			<action name="Execute">
+				<execute>
+					gedit
+				</execute>
+			</action>
+		</item>
+		<item label="GQView">
+			<action name="Execute">
+				<execute>
+					gqview
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Exaile">
+			<action name="Execute">
+				<execute>
+					exaile
+				</execute>
+			</action>
+		</item>
+		<item label="MoC">
+			<action name="Execute">
+				<execute>
+					terminator --geometry 880x689+10+30 --command=&quot;mocp -T /usr/share/moc/themes/transparent-background&quot;
+				</execute>
+			</action>
+		</item>
+		<item label="Mutt">
+			<action name="Execute">
+				<execute>
+					terminator --geometry 900x700+20+30 --command=mutt
+				</execute>
+			</action>
+		</item>
+		<item label="Calcurse">
+			<action name="Execute">
+				<execute>
+					terminator --geometry 880x689+10+30 --command=&quot;calcurse&quot;
+				</execute>
+			</action>
+		</item>
+		<item label="Claws Mail">
+			<action name="Execute">
+				<execute>
+					claws-mail
+				</execute>
+			</action>
+		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<execute>
+					thunderbird
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>
+					chromium-browser --enable-greasemonkey --enable-user-scripts --enable-extensions --enable-plugins
+				</execute>
+			</action>
+		</item>
+		<item label="Firefox 3.5">
+			<action name="Execute">
+				<execute>
+					firefox-3.5
+				</execute>
+			</action>
+		</item>
+		<item label="Firefox 3.0">
+			<action name="Execute">
+				<execute>
+					firefox-3.0
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Change Wallpaper">
+			<action name="Execute">
+				<execute>
+					nitrogen --sort=rtime --no-recurse /home/exmage/images/wallpapers
+				</execute>
+			</action>
+		</item>
+		<menu id="net" label="Internet">
+			<item label="Firefox">
+				<action name="Execute">
+					<execute>
+						firefox
+					</execute>
+				</action>
+			</item>
+			<item label="Claws Mail">
+				<action name="Execute">
+					<execute>
+						claws-mail
+					</execute>
+				</action>
+			</item>
+			<item label="Thunderbird">
+				<action name="Execute">
+					<execute>
+						thunderbird
+					</execute>
+				</action>
+			</item>
+			<item label="Liferea Feed Reader">
+				<action name="Execute">
+					<execute>
+						liferea
+					</execute>
+				</action>
+			</item>
+			<item label="gPodder Podcast Catcher">
+				<action name="Execute">
+					<execute>
+						gpodder
+					</execute>
+				</action>
+			</item>
+			<item label="gFTP Client">
+				<action name="Execute">
+					<execute>
+						gftp
+					</execute>
+				</action>
+			</item>
+			<item label="Transmission BitTorrent Client">
+				<action name="Execute">
+					<execute>
+						transmission
+					</execute>
+				</action>
+			</item>
+			<item label="Skype">
+				<action name="Execute">
+					<execute>
+						skype
+					</execute>
+				</action>
+			</item>
+			<item label="XChat IRC Client">
+				<action name="Execute">
+					<execute>
+						xchat
+					</execute>
+				</action>
+			</item>
+			<item label="Gwibber Microblogging Client">
+				<action name="Execute">
+					<execute>
+						gwibber
+					</execute>
+				</action>
+			</item>
+			<item label="Pidgin IM">
+				<action name="Execute">
+					<execute>
+						pidgin
+					</execute>
+				</action>
+			</item>
+			<item label="Network Tools">
+				<action name="Execute">
+					<execute>
+						gnome-nettool
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="graphics" label="Graphics">
+			<item label="GIMP">
+				<action name="Execute">
+					<execute>
+						gimp
+					</execute>
+				</action>
+			</item>
+			<item label="Inkscape">
+				<action name="Execute">
+					<execute>
+						inkscape
+					</execute>
+				</action>
+			</item>
+			<item label="GPicView Image Viewer">
+				<action name="Execute">
+					<execute>
+						gpicview
+					</execute>
+				</action>
+			</item>
+			<item label="Colour Picker">
+				<action name="Execute">
+					<execute>
+						gcolor2
+					</execute>
+				</action>
+			</item>
+			<item label="Agave Palette Designer">
+				<action name="Execute">
+					<execute>
+						agave
+					</execute>
+				</action>
+			</item>
+			<item label="Specimen Font Previewer">
+				<action name="Execute">
+					<execute>
+						gnome-specimen
+					</execute>
+				</action>
+			</item>
+			<item label="FontyPython">
+				<action name="Execute">
+					<execute>
+						fontypython
+					</execute>
+				</action>
+			</item>
+			<item label="Xsane Image Scanner">
+				<action name="Execute">
+					<execute>
+						xsane
+					</execute>
+				</action>
+			</item>
+			<menu id="graphicsScreenshots" label="Take Screenshot">
+				<item label="Now">
+					<action name="Execute">
+						<execute>
+							scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; gpicview ~/images/$f'
+						</execute>
+					</action>
+				</item>
+				<item label="In 5 Seconds...">
+					<action name="Execute">
+						<execute>
+							scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; gpicview ~/images/$f'
+						</execute>
+					</action>
+				</item>
+				<item label="In 10 Seconds...">
+					<action name="Execute">
+						<execute>
+							scrot -d 10 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; gpicview ~/images/$f'
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<menu id="graphicsOnline" label="Online Tools">
+				<item label="Colour Lovers">
+					<action name="Execute">
+						<execute>
+							firefox http://www.colourlovers.com/
+						</execute>
+					</action>
+				</item>
+				<item label="Color Hunter">
+					<action name="Execute">
+						<execute>
+							firefox http://colorhunter.com/
+						</execute>
+					</action>
+				</item>
+				<item label="Vector Magic">
+					<action name="Execute">
+						<execute>
+							firefox http://vectormagic.stanford.edu/
+						</execute>
+					</action>
+				</item>
+				<item label="FavIcon from Pics">
+					<action name="Execute">
+						<execute>
+							firefox http://www.htmlkit.com/services/favicon/
+						</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="office" label="Office">
+			<item label="Open Office Writer">
+				<action name="Execute">
+					<execute>
+						/usr/bin/oowriter
+					</execute>
+				</action>
+			</item>
+			<item label="AbiWord Word Processor">
+				<action name="Execute">
+					<execute>
+						abiword
+					</execute>
+				</action>
+			</item>
+			<item label="Gnumeric Spreadsheet">
+				<action name="Execute">
+					<execute>
+						gnumeric
+					</execute>
+				</action>
+			</item>
+			<item label="Calculator">
+				<action name="Execute">
+					<execute>
+						gnome-calculator
+					</execute>
+				</action>
+			</item>
+			<item label="Dictionary">
+				<action name="Execute">
+					<execute>
+						gnome-dictionary
+					</execute>
+				</action>
+			</item>
+			<item label="Evince PDF Viewer">
+				<action name="Execute">
+					<execute>
+						evince
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="audio" label="Sound &amp; Video">
+			<item label="VLC Media Player">
+				<action name="Execute">
+					<execute>
+						vlc
+					</execute>
+				</action>
+			</item>
+			<item label="Rhythmbox Music Player">
+				<action name="Execute">
+					<execute>
+						rhythmbox
+					</execute>
+				</action>
+			</item>
+			<item label="Audacity Audio Editor">
+				<action name="Execute">
+					<execute>
+						audacity
+					</execute>
+				</action>
+			</item>
+			<item label="PiTiVi Video Editor">
+				<action name="Execute">
+					<execute>
+						pitivi
+					</execute>
+				</action>
+			</item>
+			<item label="Kino Video Editor">
+				<action name="Execute">
+					<execute>
+						kino
+					</execute>
+				</action>
+			</item>
+			<item label="Create Screencast">
+				<action name="Execute">
+					<execute>
+						gtk-recordMyDesktop
+					</execute>
+				</action>
+			</item>
+			<item label="Cheese Webcam App">
+				<action name="Execute">
+					<execute>
+						cheese
+					</execute>
+				</action>
+			</item>
+			<item label="Sound Juicer CD Extractor">
+				<action name="Execute">
+					<execute>
+						sound-juicer
+					</execute>
+				</action>
+			</item>
+			<item label="Sound Recorder">
+				<action name="Execute">
+					<execute>
+						gnome-sound-recorder
+					</execute>
+				</action>
+			</item>
+			<item label="Sound Converter">
+				<action name="Execute">
+					<execute>
+						soundconverter
+					</execute>
+				</action>
+			</item>
+			<item label="WinFF Video Converter">
+				<action name="Execute">
+					<execute>
+						winff
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Volume Control">
+				<action name="Execute">
+					<execute>
+						gnome-volume-control
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="terminal" label="Terminal Apps">
+			<item label="MUTT - Email Client">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=mutt
+					</execute>
+				</action>
+			</item>
+			<item label="MoC - Music Player">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=mocp -T /usr/share/moc/themes/transparent-background
+					</execute>
+				</action>
+			</item>
+			<item label="Links2">
+				<action name="Execute">
+					<execute>
+						links2 -g
+					</execute>
+				</action>
+			</item>
+			<item label="newsbeuter - Feed Reader">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=&quot;newsbeuter -r&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="irssi - IRC Client">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=irssi
+					</execute>
+				</action>
+			</item>
+			<item label="htop - System Monitor">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=htop
+					</execute>
+				</action>
+			</item>
+			<item label="Vim - Text Editor">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=vim
+					</execute>
+				</action>
+			</item>
+			<item label="Midnight Commander - File Manager">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=mc
+					</execute>
+				</action>
+			</item>
+			<item label="rtorrent - Bit Torrent Client">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=rtorrent
+					</execute>
+				</action>
+			</item>
+			<item label="elinks - Web Browser">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=elinks
+					</execute>
+				</action>
+			</item>
+			<item label="naim - Chat Client">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=naim
+					</execute>
+				</action>
+			</item>
+			<menu id="terminalmanpages" label="Help?">
+				<separator label="man pages"/>
+				<item label="Vim">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man vim&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Midnight Commander">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man mc&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="rtorrent">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man rtorrent&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="MoC">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man mocp&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="newsbeuter">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man newsbeuter&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="elinks">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man elinks&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="MUTT">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man mutt&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="irssi">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man irssi&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="naim">
+					<action name="Execute">
+						<execute>
+                            terminator --command=&quot;man naim&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="htop">
+					<action name="Execute">
+						<execute>
+					        terminator --command=&quot;man htop&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="tools" label="Tools &amp; Utilities">
+			<menu id="documentviewers" label="Document Viewers">
+				<item label="Evince PDF Viewer">
+					<action name="Execute">
+						<execute>
+							evince
+						</execute>
+					</action>
+				</item>
+				<item label="xCHM HTML Help Viewer">
+					<action name="Execute">
+						<execute>
+							xchm
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="editors" label="Editors">
+				<item label="gedit">
+					<action name="Execute">
+						<execute>
+							gedit
+						</execute>
+					</action>
+				</item>
+				<item label="Leafpad">
+					<action name="Execute">
+						<execute>
+							leafpad
+						</execute>
+					</action>
+				</item>
+				<item label="Vim">
+					<action name="Execute">
+						<execute>
+							terminator --command=vim
+						</execute>
+					</action>
+				</item>
+				<item label="gVim">
+					<action name="Execute">
+						<execute>
+							gvim
+						</execute>
+					</action>
+				</item>
+				<item label="Pyroom">
+					<action name="Execute">
+						<execute>
+							pyroom
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Xfburn CD/DVD Writer">
+				<action name="Execute">
+					<execute>
+						xfburn
+					</execute>
+				</action>
+			</item>
+			<item label="Gnome Calculator">
+				<action name="Execute">
+					<execute>
+						gnome-calculator
+					</execute>
+				</action>
+			</item>
+			<item label="Gnome Dictionary">
+				<action name="Execute">
+					<execute>
+						gnome-dictionary
+					</execute>
+				</action>
+			</item>
+			<item label="OSMO Personal Organizer">
+				<action name="Execute">
+					<execute>
+						osmo
+					</execute>
+				</action>
+			</item>
+			<item label="PCMan File Manager">
+				<action name="Execute">
+					<execute>
+						pcmanfm
+					</execute>
+				</action>
+			</item>
+			<item label="PCMan File Manager (root)">
+				<action name="Execute">
+					<execute>
+						gksudo pcmanfm
+					</execute>
+				</action>
+			</item>
+			<menu id="terminals" label="Terminal Emulators">
+				<item label="Terminator">
+					<action name="Execute">
+						<execute>
+							terminator
+						</execute>
+					</action>
+				</item>
+				<item label="Xterm">
+					<action name="Execute">
+						<execute>
+							xterm
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="File Roller">
+				<action name="Execute">
+					<execute>
+						file-roller
+					</execute>
+				</action>
+			</item>
+			<item label="File Roller (root)">
+				<action name="Execute">
+					<execute>
+						gksudo file-roller
+					</execute>
+				</action>
+			</item>
+			<item label="Xpad - sticky notes">
+				<action name="Execute">
+					<execute>
+						xpad
+					</execute>
+				</action>
+			</item>
+			<item label="World Clock">
+				<action name="Execute">
+					<execute>
+						gworldclock
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu execute="obpipemenu-places ~" id="places" label="Places"/>
+		<separator/>
+		<menu id="preferences" label="Preferences">
+			<menu execute="xcompmgr-crunchbang" id="CompositingPipeMenu" label="Compositing"/>
+			<item label="Choose Wallpaper">
+				<action name="Execute">
+					<execute>
+						nitrogen --sort=rtime --no-recurse /home/exmage/images/wallpapers
+					</execute>
+				</action>
+			</item>
+			<item label="LX Appearance">
+				<action name="Execute">
+					<execute>
+						lxappearance
+					</execute>
+				</action>
+			</item>
+			<item label="Gnome Appearance">
+				<action name="Execute">
+					<execute>
+						gnome-appearance-properties
+					</execute>
+				</action>
+			</item>
+			<item label="ATI Control">
+				<action name="Execute">
+					<execute>
+						gksudo amdcccle
+					</execute>
+				</action>
+			</item>
+			<item label="Gconf-Editor">
+				<action name="Execute">
+					<execute>
+						gconf-editor
+					</execute>
+				</action>
+			</item>
+			<menu id="conkyconfig" label="Conky Config">
+				<item label="Edit .conkyrc">
+					<action name="Execute">
+						<execute>
+							gedit ~/.conkyrc
+						</execute>
+					</action>
+				</item>
+				<item label="Edit .conky2rc">
+					<action name="Execute">
+						<execute>
+							gedit .conky2rc
+						</execute>
+					</action>
+				</item>
+				<item label="Edit .conkyWrc">
+					<action name="Execute">
+						<execute>
+							gedit .conkyWrc
+						</execute>
+					</action>
+				</item>
+				<item label="Restart Conky">
+					<action name="Execute">
+						<execute>
+							conkywonky
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man page">
+					<action name="Execute">
+						<execute>
+							terminator --command=&quot;man conky&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Wiki Page">
+					<action name="Execute">
+						<execute>
+							firefox http://crunchbanglinux.org/wiki/conky
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="dmenuconfig" label="dmenu Config">
+				<item label="Edit start-up script">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/dmenu/dmenu-bind.sh
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man page">
+					<action name="Execute">
+						<execute>
+							terminator --command=&quot;man dmenu&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="gmrunconfig" label="gmrun Config">
+				<item label="Edit config file">
+					<action name="Execute">
+						<execute>
+							gedit ~/.gmrunrc
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man page">
+					<action name="Execute">
+						<execute>
+							terminator --command=&quot;man gmrun&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="obConfig" label="Openbox Config">
+				<item label="Edit menu.xml">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/openbox/menu.xml
+						</execute>
+					</action>
+				</item>
+				<item label="Edit rc.xml">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/openbox/rc.xml
+						</execute>
+					</action>
+				</item>
+				<item label="Edit autostart.sh">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/openbox/autostart.sh
+						</execute>
+					</action>
+				</item>
+				<item label="GUI Menu Editor">
+					<action name="Execute">
+						<execute>
+							obmenu
+						</execute>
+					</action>
+				</item>
+				<item label="GUI Config Tool">
+					<action name="Execute">
+						<execute>
+							obconf
+						</execute>
+					</action>
+				</item>
+				<item label="Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="Restart">
+					<action name="Restart"/>
+				</item>
+			</menu>
+			<menu id="terminatorconfig" label="Terminator Config">
+				<item label="Edit config file">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/terminator/config
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man page">
+					<action name="Execute">
+						<execute>
+							terminator --command=&quot;man terminator_config&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="tint2config" label="tint2 Panel Config">
+				<item label="Edit config file">
+					<action name="Execute">
+						<execute>
+							gedit ~/.config/tint2/tint2rc
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man page">
+					<action name="Execute">
+						<execute>
+							terminator --command=&quot;man tint2&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Online Help">
+					<action name="Execute">
+						<execute>
+							firefox http://code.google.com/p/tint2/wiki/Welcome
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Screensaver &amp; Power Management">
+				<action name="Execute">
+					<execute>
+						gnome-screensaver-preferences
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="system" label="System">
+			<item label="System Update">
+				<action name="Execute">
+					<execute>
+						system-update
+					</execute>
+				</action>
+			</item>
+			<item label="Disk Partitioner">
+				<action name="Execute">
+					<execute>
+						gksudo gparted
+					</execute>
+				</action>
+			</item>
+			<menu id="DisplaySettings" label="Display Settings">
+				<item label="Adjust with lxrandr">
+					<action name="Execute">
+						<execute>
+						    lxrandr
+						</execute>
+					</action>
+				</item>
+				<item label="Adjust with grandr">
+					<action name="Execute">
+						<execute>
+						    grandr
+						</execute>
+					</action>
+				</item>
+				<separator label="Help?"/>
+				<item label="man xrandr">
+					<action name="Execute">
+						<execute>
+						    terminator --command=&quot;man xrandr&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Edit Default Applications">
+				<action name="Execute">
+					<execute>
+						terminator --command=&quot;sudo update-alternatives --all&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="Login setup (GDM)">
+				<action name="Execute">
+					<execute>
+						gksudo gdmsetup
+					</execute>
+				</action>
+			</item>
+			<item label="Network Admin">
+				<action name="Execute">
+					<execute>
+						network-admin
+					</execute>
+				</action>
+			</item>
+			<item label="Package Manager">
+				<action name="Execute">
+					<execute>
+						gksudo synaptic
+					</execute>
+				</action>
+			</item>
+			<item label="Passwords and Encryption Keys">
+				<action name="Execute">
+					<execute>
+						seahorse
+					</execute>
+				</action>
+			</item>
+			<item label="Printer Settings">
+				<action name="Execute">
+					<execute>
+						system-config-printer
+					</execute>
+				</action>
+			</item>
+			<item label="Restricted Device Manager">
+				<action name="Execute">
+					<execute>
+						gksudo jockey-gtk
+					</execute>
+				</action>
+			</item>
+			<item label="Services/Daemons">
+				<action name="Execute">
+					<execute>
+						services-admin
+					</execute>
+				</action>
+			</item>
+			<item label="Shared Folders">
+				<action name="Execute">
+					<execute>
+						shares-admin
+					</execute>
+				</action>
+			</item>
+			<item label="System Monitor">
+				<action name="Execute">
+					<execute>
+						terminator --geometry 900x700+20+30 --command=htop
+					</execute>
+				</action>
+			</item>
+			<item label="System Logs">
+				<action name="Execute">
+					<execute>
+						gnome-system-log
+					</execute>
+				</action>
+			</item>
+			<item label="Time/Date">
+				<action name="Execute">
+					<execute>
+						time-admin
+					</execute>
+				</action>
+			</item>
+			<item label="Users/Groups">
+				<action name="Execute">
+					<execute>
+						users-admin
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu execute="obpipemenu-crunchbang-help" id="help" label="Help"/>
+		<item label="xkill">
+			<action name="Execute">
+				<execute>
+					xkill
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Lock Screen">
+			<action name="Execute">
+				<execute>
+					gnome-screensaver-command -l
+				</execute>
+			</action>
+		</item>
+		<item label="Exit">
+			<action name="Execute">
+				<execute>
+					openbox --exit
+				</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

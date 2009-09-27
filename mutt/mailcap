@@ -1,0 +1,2 @@
+text/html;                      links2 -g %s; nametemplate=%s.html
+text/html;                      links2 -g -dump %s; nametemplate=%s.html; copiousoutput
