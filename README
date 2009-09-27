@@ -1,0 +1,2 @@
+A simple set of configuration files for Mutt, Terminator, Openbox, Conky and Bash. This set of files is most useful for
+Crunchbang Linux users, but others my find some functionality in this desktop setup. The .bashrc includes an alias for cbinfo, a screenshot utility.
