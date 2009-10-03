@@ -55,10 +55,10 @@ macro generic "<esc>2" ":set from='Manager <jtdoe@egmail.com>'"
 
 ### Special keybindings
 bind editor <space> noop
-macro index gi "<change-folder> =INBOX<enter>" "Go to inbox"
-macro index ga "<change-folder> =[Gmail]/All Mail<enter>" "Go to all mail"
-macro index gs "<change-folder> =[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
-macro index gd "<change-folder> =[Gmail]/Drafts<enter>" "Go to drafts"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 macro index,pager H "<save-message>=INBOX<enter>" "mark message as ham"
 
 send2-hook '~f user@gmail.com' 'set sendmail="/usr/local/bin/msmtp"
