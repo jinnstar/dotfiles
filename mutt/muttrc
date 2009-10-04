@@ -23,7 +23,9 @@ unset imap_passive
 #Active Mailboxes
 mailboxes "imaps://imap.gmail.com:993/INBOX"
 
-set editor='nano'
+# option "+/^$" puts cursor in first blank line
+set editor="vim -c 'set tw=70 et' '+/^$'"
+set edit_headers
 set alias_file=~/.mutt/mail_aliases
 #source ~/.mutt/mail_aliases
 source ~/.mutt/gpg.rc
