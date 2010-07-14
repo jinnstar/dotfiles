@@ -1,21 +1,20 @@
 set imap_user = "user@gmail.com"
-set imap_pass = "Your#1Password"
+set imap_pass = "My#1Password"
 
 set smtp_url = "smtp://user@gmail.com@smtp.gmail.com:587/"
-set smtp_pass = "Your#1Password"
+set smtp_pass = "My#1Password"
 set from = "user@gmail.com"
-set realname = "John T. Doe"
+set realname = "Real Name"
 
-set spoolfile = "imaps://imap.gmail.com:993/INBOX"
 set folder = "imaps://imap.gmail.com:993"
-set record="imaps://imap.gmail.com/[Gmail]/Sent Mail"
-set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set spoolfile = "+INBOX"
+set postponed="+[Gmail]/Drafts"
 set header_cache=”~/.mutt/cache/headers”
 set message_cachedir=”~/.mutt/cache/bodies”
 set certificate_file=~/.mutt/certificates
 set trash="imaps://imap.gmail.com/[Gmail]/Trash"
 # folder-hook . 'unset trash'
-set move = yes
+set move = no
 set imap_keepalive = 900
 
 unset imap_passive
@@ -24,10 +23,10 @@ unset imap_passive
 mailboxes "imaps://imap.gmail.com:993/INBOX"
 
 # option "+/^$" puts cursor in first blank line
-set editor="vim -c 'set tw=70 et' '+/^$'"
+set editor="vim -c 'set tw=80 et wrap' '+/^$'"
 set edit_headers
 set alias_file=~/.mutt/mail_aliases
-#source ~/.mutt/mail_aliases
+source ~/.mutt/mail_aliases
 source ~/.mutt/gpg.rc
 
 ### Misc settings
@@ -36,6 +35,9 @@ set sort_aux = 'last-date-received'
 set imap_check_subscribed
 set markers=no # don't put '+' at the beginning of wrapped lines
 set pager_index_lines= 5 # how large is the index window?
+
+## html mail view in elinks
+auto_view text/html
 
 #Header Stuff 
 ignore "Authentication-Results:"
@@ -52,25 +54,22 @@ unignore x-mailer:
 send-hook . 'set signature=~/.signature'
 
 ### Profile switching
-macro generic "<esc>1" ":set from='John T. Doe <user@gmail.com>'"
-macro generic "<esc>2" ":set from='Manager <jtdoe@egmail.com>'"
+macro generic "<esc>1" ":set from='Real Name <user@gmail.com>'"
+macro generic "<esc>2" ":set from='Profile 2 <profile2@gmail.com>'"
 
 ### Special keybindings
 bind editor <space> noop
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index gl "<change-folder>=lolidoll<enter>" "Go to lolidoll"
+macro index ge "<change-folder>=ess<enter>" "Go to ess"
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 macro index,pager H "<save-message>=INBOX<enter>" "mark message as ham"
 
-send2-hook '~f user@gmail.com' 'set sendmail="/usr/local/bin/msmtp"
+send2-hook '~f user@gmail.com' 'set sendmail="/usr/bin/msmtp"
 
 macro index .c "T.\n;WN^T.\n" "Mark all messages as read"
-
-#URL view macro
-macro pager \cu |urlview\n
-
-auto_view html/text
 
 color attachment brightblack default  
 color error brightwhite red   # errors yell at you in red

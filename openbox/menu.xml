@@ -34,7 +34,7 @@
 		<item label="Terminal">
 			<action name="Execute">
 				<execute>
-					terminator --geometry 900x700+20+30
+					terminator --geometry 1138x689+20+30
 				</execute>
 			</action>
 		</item>
@@ -63,21 +63,21 @@
 		<item label="MoC">
 			<action name="Execute">
 				<execute>
-					terminator --geometry 880x689+10+30 --command=&quot;mocp -T /usr/share/moc/themes/transparent-background&quot;
+					terminator --geometry 1138x689+10+30 --command='mocp -T /usr/share/moc/themes/transparent-background'
 				</execute>
 			</action>
 		</item>
 		<item label="Mutt">
 			<action name="Execute">
 				<execute>
-					terminator --geometry 900x700+20+30 --command=mutt
+					terminator --geometry 1138x689+20+30 --command=mutt
 				</execute>
 			</action>
 		</item>
 		<item label="Calcurse">
 			<action name="Execute">
 				<execute>
-					terminator --geometry 880x689+10+30 --command=&quot;calcurse&quot;
+					terminator --geometry 1138x689+10+30 --command='calcurse'
 				</execute>
 			</action>
 		</item>
@@ -458,14 +458,14 @@
 			<item label="MUTT - Email Client">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=mutt
+						terminator --geometry 1138x689+20+30 --command=mutt
 					</execute>
 				</action>
 			</item>
 			<item label="MoC - Music Player">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=mocp -T /usr/share/moc/themes/transparent-background
+						terminator --geometry 1138x689+20+30 --command=mocp -T /usr/share/moc/themes/transparent-background
 					</execute>
 				</action>
 			</item>
@@ -479,56 +479,56 @@
 			<item label="newsbeuter - Feed Reader">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=&quot;newsbeuter -r&quot;
+						terminator --geometry 1138x689+20+30 --command='newsbeuter -r'
 					</execute>
 				</action>
 			</item>
 			<item label="irssi - IRC Client">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=irssi
+						terminator --geometry 1138x689+20+30 --command=irssi
 					</execute>
 				</action>
 			</item>
 			<item label="htop - System Monitor">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=htop
+						terminator --geometry 1138x689+20+30 --command=htop
 					</execute>
 				</action>
 			</item>
 			<item label="Vim - Text Editor">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=vim
+						terminator --geometry 1138x689+20+30 --command=vim
 					</execute>
 				</action>
 			</item>
 			<item label="Midnight Commander - File Manager">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=mc
+						terminator --geometry 1138x689+20+30 --command=mc
 					</execute>
 				</action>
 			</item>
 			<item label="rtorrent - Bit Torrent Client">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=rtorrent
+						terminator --geometry 1138x689+20+30 --command=rtorrent
 					</execute>
 				</action>
 			</item>
 			<item label="elinks - Web Browser">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=elinks
+						terminator --geometry 1138x689+20+30 --command=elinks
 					</execute>
 				</action>
 			</item>
 			<item label="naim - Chat Client">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=naim
+						terminator --geometry 1138x689+20+30 --command=naim
 					</execute>
 				</action>
 			</item>
@@ -537,70 +537,70 @@
 				<item label="Vim">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man vim&quot;
+                            terminator --command='man vim'
 						</execute>
 					</action>
 				</item>
 				<item label="Midnight Commander">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man mc&quot;
+                            terminator --command='man mc'
 						</execute>
 					</action>
 				</item>
 				<item label="rtorrent">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man rtorrent&quot;
+                            terminator --command='man rtorrent'
 						</execute>
 					</action>
 				</item>
 				<item label="MoC">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man mocp&quot;
+                            terminator --command='man mocp'
 						</execute>
 					</action>
 				</item>
 				<item label="newsbeuter">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man newsbeuter&quot;
+                            terminator --command='man newsbeuter'
 						</execute>
 					</action>
 				</item>
 				<item label="elinks">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man elinks&quot;
+                            terminator --command='man elinks'
 						</execute>
 					</action>
 				</item>
 				<item label="MUTT">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man mutt&quot;
+                            terminator --command='man mutt'
 						</execute>
 					</action>
 				</item>
 				<item label="irssi">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man irssi&quot;
+                            terminator --command='man irssi'
 						</execute>
 					</action>
 				</item>
 				<item label="naim">
 					<action name="Execute">
 						<execute>
-                            terminator --command=&quot;man naim&quot;
+                            terminator --command='man naim'
 						</execute>
 					</action>
 				</item>
 				<item label="htop">
 					<action name="Execute">
 						<execute>
-					        terminator --command=&quot;man htop&quot;
+					        terminator --command='man htop'
 						</execute>
 					</action>
 				</item>
@@ -820,7 +820,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<execute>
-							terminator --command=&quot;man conky&quot;
+							terminator --command='man conky'
 						</execute>
 					</action>
 				</item>
@@ -844,7 +844,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<execute>
-							terminator --command=&quot;man dmenu&quot;
+							terminator --command='man dmenu'
 						</execute>
 					</action>
 				</item>
@@ -861,7 +861,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<execute>
-							terminator --command=&quot;man gmrun&quot;
+							terminator --command='man gmrun'
 						</execute>
 					</action>
 				</item>
@@ -921,7 +921,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<execute>
-							terminator --command=&quot;man terminator_config&quot;
+							terminator --command='man terminator_config'
 						</execute>
 					</action>
 				</item>
@@ -938,7 +938,7 @@
 				<item label="man page">
 					<action name="Execute">
 						<execute>
-							terminator --command=&quot;man tint2&quot;
+							terminator --command='man tint2'
 						</execute>
 					</action>
 				</item>
@@ -992,7 +992,7 @@
 				<item label="man xrandr">
 					<action name="Execute">
 						<execute>
-						    terminator --command=&quot;man xrandr&quot;
+						    terminator --command='man xrandr'
 						</execute>
 					</action>
 				</item>
@@ -1000,7 +1000,7 @@
 			<item label="Edit Default Applications">
 				<action name="Execute">
 					<execute>
-						terminator --command=&quot;sudo update-alternatives --all&quot;
+						terminator --command='sudo update-alternatives --all'
 					</execute>
 				</action>
 			</item>
@@ -1063,7 +1063,7 @@
 			<item label="System Monitor">
 				<action name="Execute">
 					<execute>
-						terminator --geometry 900x700+20+30 --command=htop
+						terminator --geometry 1138x689+20+30 --command=htop
 					</execute>
 				</action>
 			</item>
