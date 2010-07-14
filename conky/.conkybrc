@@ -1,0 +1,43 @@
+## Customize 2 part conky setup
+## Requires scripts based on conky colors
+
+use_xft yes
+xftfont FreeMono Medium:size=7
+override_utf8_locale yes
+
+text_buffer_size 1024
+update_interval 5
+total_run_times 0
+double_buffer yes
+no_buffers yes
+net_avg_samples 1
+cpu_avg_samples 1
+
+own_window_class Conky
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+default_color ffffff
+default_shade_color ffffff
+default_outline_color ffffff
+draw_shades no
+draw_outline no
+
+color0 ffffff
+color1 ffffff
+color2 ffffff
+color3 ffffff
+
+alignment bottom_middle
+gap_x 5
+gap_y 5
+minimum_size 400 15
+maximum_width 1300
+
+imlib_cache_size 0
+#temperature_unit fahrenheit
+
+TEXT
+${color2}${nodename}${color} | Temp: ${color2}${execi 6 acpi -V  | grep ok | cut -c16-17}C.${color} | Batt: ${color2}${execi 10 acpi | paste -s | cut -c12-35}${color} | RAM: ${color1}$memperc%${color}${font} U: ${color2}${mem}${color} F: ${color2}${memeasyfree}${color} | CPU1: ${color1}${cpu cpu1}%${color} | CPU2: ${color1}${cpu cpu2}%${color} 
