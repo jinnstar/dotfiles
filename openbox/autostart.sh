@@ -3,12 +3,12 @@
 
 # Programs to launch at startup
 # =============================
-
+#vxprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _NET_CURRENT_DESKTOP
 # Start session manager
 lxsession &
 
 # Start Bluetooth applet
-#bluetooth-applet &
+# bluetooth-applet &
 
 # Set-up keyboard maps and sytem tray switcher
 # tip - quickly toggle between keyboard maps by holding both shift keys!
@@ -16,53 +16,52 @@ lxsession &
 #(sleep 1s && fbxkb) &
 # ^^ note: if using the LiveCD, you can also change to a different
 #          keyboard map by entering the terminal command:
-(sleep 1s && setxkbmap us) &
+# (sleep 2s && setxkbmap us) &
 #          Where "xx" is the 2 letter country code.
 
-# Force openoffice.org to use GTK theme
 # Launch clipboard manager
-#(sleep 1s && parcellite) &
+# (sleep 1s && parcellite) &
 
-# Uncomment to enable system updates at boot
-#(sleep 180s && system-update) &
-
-# Check for restricted hardware
-#(sleep 60s && jockey-gtk --check) &
-
-# Enable Eyecandy - off by default
-# see "/usr/bin/crunchbang/xcompmgr-crunchbang" for more info
-(sleep 2s && xcompmgr-crunchbang --startstop ) &
-
+# Force openoffice.org to use GTK theme
 # enable this if you install openoffice
 export OOO_FORCE_DESKTOP=gnome
 
 # Start volume control system tray applet
-(sleep 4s && volwheel) &
-
-# Set desktop wallpaper
-nitrogen --restore &
-
-# Start screensaver deamon
-gnome-screensaver &
+# (sleep 4s && gnome-volume-control-applet) &
 
 # Launch panel
 tint2 &
 
-# Launch gnote
-gnote &
+#claws-mail
+claws-mail &
 
-# wicd
-# wicd-client &
+#power manager
+xfce4-power-manager &
+
+# Set desktop wallpaper
+# nitrogen --restore &
+
+# Launch xpad
+# xpad --no-new &
 
 # Thunar daemon
-thunar --daemon &
+# thunar --daemon &
 
 # Enable power management
-gnome-power-manager &
+# xscreensaver &
 
 # Launch Conky
-(sleep 2s && conky -c .conkyrc -q ) &
-(sleep 3s && conky -c .conkyWrc -q ) &
+# conky -c .conkybrc &
+# conky &
 
-# Mutt
-terminator --geometry 900x700+20+30 --command=mutt &
+# numlockx
+# numlockx on &
+
+#eye candy
+(sleep 5s && xcompmgr -cCfF -t-5 -l-5 -r4.2 -o.55 -D6) &
+
+#nm-applet
+# (sleep 5s && wicd-client) &
+
+#volwheel
+# (sleep 5s && volwheel) &

@@ -1,26 +1,28 @@
-# Terminator config, see "man terminator_config" for more options
-# ---------------------------------------------------------------
-force_no_bell=true
-background_color=#222222
-foreground_color=#707678
-font=Mono 8
-#palette=#22cc22dd22ee:#aaee44774477:#669966cc5599:#cc77cc9933dd:#66ff9999bb44:#aaaa88ccbbff:#6688bb44bb11:#770077667788:#aa33aa55aa66:#eeee66336633:#9900aa5577dd:#dd00cc5544dd:#77cc9966bb00:#88ff44cc7700:#22dd88228855:#ee22ee22ee22
-use_theme_colors=False
-titlebars=false
-handle_size=0
-borderless=true
-scrollbar_position=disabled
-scrollback_lines = '500'
-
-# Transparency
-# --------------------------------------
-background_type=transparent
-enable_real_transparency=true
-background_darkness=0.9
-
-
-
-
-
-
-
+[global_config]
+  title_transmit_bg_color = "#000100"
+  handle_size = 2
+  title_transmit_fg_color = "#cc0000"
+  borderless = True
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    background_image = /home/exmage/Pictures/wallpapers/1250789585940.jpg
+    background_darkness = 0.73
+    background_type = transparent
+    scrollbar_position = hidden
+    cursor_color = "#06f565"
+    show_titlebar = False
+    cursor_shape = ibeam
+    font = Monospace 9
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
